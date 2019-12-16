@@ -10,4 +10,4 @@ jobs:
           id: check
           uses: npmaile/GH-Actions-ShellCheck@master
           with:
-            find_regex: '.*'
+            find_regex: '.*\.sh'
