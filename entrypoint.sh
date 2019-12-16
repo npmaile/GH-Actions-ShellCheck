@@ -1,3 +1,3 @@
 #!/bin/sh -l
-echo ${INPUT_FIND-REGEX}
-shellcheck $(find . -regex "${INPUT_FIND-REGEX}")
+echo ${INPUT_FIND_REGEX}
+shellcheck $(find . -regex "${INPUT_FIND_REGEX}")
