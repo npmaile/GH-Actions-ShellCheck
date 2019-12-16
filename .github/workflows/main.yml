@@ -5,6 +5,7 @@ jobs:
       runs-on: ubuntu-latest
       name: shellcheck the shellchecker
       steps:
+        - uses: actions/checkout@master
         - name: check checker
           id: check
           uses: npmaile/GH-Actions-ShellCheck@master
