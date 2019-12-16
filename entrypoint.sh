@@ -1,3 +1,4 @@
 #!/bin/sh -l
-echo "${INPUT_FIND_REGEX}"
-shellcheck "$(find . -regex "${INPUT_FIND_REGEX}" | grep -v "${INPUT_EXCLUSIONS}")"
+EXCLUSIONS = ${INPUT_EXCLUSIONS:-'^$'}
+REGEX = ${FIND_REGEX:-'.*\.sh'}
+shellcheck "$(find . -regex "${FIND_REGEX}" | grep -v "${EXCLUSIONS}")"
