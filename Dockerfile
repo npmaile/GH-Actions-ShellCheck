@@ -1,4 +1,4 @@
-FROM koalaman/shellcheck:latest
+FROM koalaman/shellcheck-alpine:latest
 
 COPY entrypoint.sh /entrypoint.sh
 
