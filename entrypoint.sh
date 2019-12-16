@@ -1,4 +1,3 @@
 #!/bin/sh -l
 
-echo "Hello"
-env
+shellcheck $(find . -regex "INPUT_FIND-REGEX")
