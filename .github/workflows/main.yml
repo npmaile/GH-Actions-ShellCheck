@@ -1,0 +1,10 @@
+on: [push]
+
+jobs:
+  test:
+      runs-on: ubuntu-latest
+      name: shellcheck the shellchecker
+      steps:
+      - name: check the checker
+        id: checker
+        uses: npmaile/GH-Actions-ShellCheck
