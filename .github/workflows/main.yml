@@ -8,3 +8,5 @@ jobs:
         - name: check checker
           id: check
           uses: npmaile/GH-Actions-ShellCheck@master
+          with:
+            find-regex: '.*\.sh'
