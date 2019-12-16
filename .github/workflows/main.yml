@@ -7,4 +7,4 @@ jobs:
       steps:
         - name: check checker
           id: check
-          uses: npmaile/GH-Actions-ShellCheck
+          uses: npmaile/GH-Actions-ShellCheck@master
