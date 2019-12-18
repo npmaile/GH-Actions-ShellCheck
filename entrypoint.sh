@@ -5,5 +5,6 @@ pwd
 echo "checking files:"
 files="$(find . -regex "${REGEX}"| grep -v "${EXCLUSIONS}")"
 for file in $files; do
-shellcheck $file
+	echo "testing ${file}"
+	shellcheck "$file"
 done
