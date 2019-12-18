@@ -1,4 +1,4 @@
-#!/bin/sh -l
+#!/bin/bash -l
 EXCLUSIONS=${INPUT_EXCLUSIONS:-'^$'}
 REGEX=${INPUT_FIND_REGEX:-'.*\.sh'}
 pwd
