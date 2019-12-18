@@ -9,7 +9,7 @@ for file in $files; do
 	echo "testing ${file}"
 	shellcheck "$file"
 	status="$?"
-	if $( ! [ ${status} != "0" ] ) ; then
+	if ! [ ${status} != "0" ] ; then
 		returncode=${status}
 	fi
 done
