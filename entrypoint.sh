@@ -1,4 +1,4 @@
-#!/usr/bin/env dash -l
+#!/bin/sh -l
 EXCLUSIONS=${INPUT_EXCLUSIONS:-'^$'}
 REGEX=${INPUT_FIND_REGEX:-'.*\.sh'}
 pwd
@@ -9,7 +9,7 @@ for file in $files; do
 	echo "testing ${file}"
 	shellcheck "$file"
 	status="$?"
-	if [ ${status} -ne 0 ]; then
+	if ${status} -ne "0" ; then
 		returncode=${status}
 	fi
 done
