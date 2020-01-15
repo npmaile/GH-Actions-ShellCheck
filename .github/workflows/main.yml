@@ -3,11 +3,11 @@ on: [push]
 jobs:
   test:
     runs-on: [linux]
-      name: shellcheck the shellchecker
-      steps:
-        - uses: actions/checkout@master
-        - name: check checker
-          id: check
-          uses: npmaile/GH-Actions-ShellCheck@master
-          with:
-            find_regex: '.*\.sh'
+    name: shellcheck the shellchecker
+    steps:
+      - uses: actions/checkout@master
+      - name: check checker
+        id: check
+        uses: npmaile/GH-Actions-ShellCheck@master
+        with:
+          find_regex: '.*\.sh'
