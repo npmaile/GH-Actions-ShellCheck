@@ -2,7 +2,7 @@ on: [push]
 
 jobs:
   test:
-    runs-on: [linux]
+    runs-on: ubuntu-latest
     name: shellcheck the shellchecker
     steps:
       - uses: actions/checkout@master
